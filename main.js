@@ -68,15 +68,25 @@
 
 /*FOREACH ITERATION */
 
+// const numbers = [33, 45, 78, 2, 15];
+
+// foreachIteration(numbers, text);
+// function foreachIteration (numbers, text) {
+//     for(let i = 0; i < numbers.length; i++) { 
+//         let indexValue = numbers[i];
+//         console.log(teindexValuext);
+//     }   
+// }
+
+/*MAP ITERATION */
+
 const numbers = [33, 45, 78, 2, 15];
+let numbersNew = mapIteration(numbers);
 
-foreachIteration(numbers, text);
-function foreachIteration (numbers, text) {
-    for(let i = 0; i < numbers.length; i++) { 
-        let indexValue = numbers[i];
-        console.log(teindexValuext);
-    }   
+function mapIteration(numbers) {
+    let newArray = [];
+    for(let i = 0; i < numbers.length; i++) {
+        newArray.push(numbers[i]*2);
+    }
+    return newArray;
 }
-
-
-
