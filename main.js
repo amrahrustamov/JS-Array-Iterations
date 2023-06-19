@@ -70,7 +70,6 @@
 
 const numbers = [33, 45, 78, 2, 15];
 
-let text = [];
 foreachIteration(numbers, text);
 function foreachIteration (numbers, text) {
     for(let i = 0; i < numbers.length; i++) { 
