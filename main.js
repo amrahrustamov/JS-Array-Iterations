@@ -80,13 +80,30 @@
 
 /*MAP ITERATION */
 
-const numbers = [33, 45, 78, 2, 15];
-let numbersNew = mapIteration(numbers);
+// const numbers = [33, 45, 78, 2, 15];
+// let numbersNew = mapIteration(numbers);
 
-function mapIteration(numbers) {
-    let newArray = [];
+// function mapIteration(numbers) {
+//     let newArray = [];
+//     for(let i = 0; i < numbers.length; i++) {
+//         newArray.push(numbers[i]*2);
+//     }
+//     return newArray;
+// }
+
+/*FIND INDEX ITERATION */
+
+const numbers = [7, 33, 45, 78, 2, 15, 99];
+let addNumber = 85;
+
+findIndexIteration(numbers, addNumber);
+
+function findIndexIteration(numbers, addNumber) {
     for(let i = 0; i < numbers.length; i++) {
-        newArray.push(numbers[i]*2);
+        if(numbers[i] > addNumber) {
+            alert("index of first number over your number is " + i);
+            return;
+        }
     }
-    return newArray;
+    alert("not any value over your value");
 }
